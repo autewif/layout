@@ -6,6 +6,7 @@
     <title>layout</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
         body {            
@@ -13,11 +14,9 @@
             margin: 0
         }
 
-
         .wrapper {
             display: flex;
         }
-
 
         nav {
             flex: 0 0 200px;
@@ -26,18 +25,23 @@
 
         .nav-wrapper {
             /*margin: 100px 20px 0px 20px;*/
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             position: fixed;
-            top: 0;
-            left: 0;
+            /*top: 0;*/
+            /*left: 0;*/
         }
-
 
         section {
             flex: 1 1;
             padding: 20px;
 
         }
-        #logo{
+        .nav-wrapper > div {
+            display:flex;
+        }
+        .logo {
             border-radius: 40px;
         }
     </style>
@@ -47,14 +51,22 @@
     <div class="wrapper">
         <nav role="navigation">
             <div class="nav-wrapper">
-                <img id="logo" src="http://lorempixel.com/80/80" alt="logo"></img>
+                <div>
+                    <img class="logo" src="http://lorempixel.com/80/80" alt="logo"></img>
+                </div>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Clients</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
-                <blockquote><i>Please, make me fixed!</i></blockquote>              
+                <div class="social">
+                    <i class="fa fa-facebook" style="font-size:24px;">  </i>
+                    <i class="fa fa-twitter" style="font-size:24px;">  </i>
+
+                </div>
+                <blockquote><i>All rights reserved.</i></blockquote> 
+                <copyright>asdflksajflkjalk</copyright>             
 
             </div>
         </nav>
