@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body{
+                background-color: tan;
+            }
+            .container{                
+                border: solid 2px red;
+                margin: 40px 40px 0px 40px;
+                display: flex;
+                min-height: 97vh;
+                flex-direction: row;                              
+            }            
+            .sidebar{
+                /*position: fixed;*/
+                background-color: aliceblue;
+                display: flex;
+                flex-direction:column;
+                flex:1.5;
+            }
+            .content{
+                background-color: lightsteelblue;
+                display: flex;
+                flex-direction:column;
+                flex:10;
+            }
+            .logo, .menu, .footer, .main-content{
+                border: dotted 2px black;
+                margin: 5px;
+            }
+            .logo{
+                flex: 1;
+            }
+            .menu{
+                flex:3;
+            }
+            .footer{
+                flex:2;
+            }
+            .main-content{
+                margin: 10px 20px 20px 20px;
+                min-height: 100%;
+            }
+            .logo >img{
+                /*padding: 5px;*/
+                border-radius: 50px;
+            }
+
+
+        
+        
+        
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <aside class="sidebar">
+                <div class="logo"><img src="http://lorempixel.com/100/100/" alt=""></div>
+                <div class="menu"></div>
+                <div class="footer"></div>
+            </aside>
+            <div class="content">
+                <div class="main-content">sdf</div>
+                
+
+
+            </div>
+
+
+
+        </div>
+        
+    </body>
+</html>
